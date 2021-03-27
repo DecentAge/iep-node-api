@@ -1,11 +1,11 @@
 {
-  "name": "XIN-Node-API-Definitions",
+  "name": "iep-node-api",
   "version": "1.0.0",
   "description": "Examples of XIN API calls base path is /api",
   "main": "index.js",
   "scripts": {
-	"prestart": "npm install",
-	"start": "node index.js"
+    "prestart": "npm install",
+    "start": "node index.js"
   },
   "keywords": [
     "swagger"
