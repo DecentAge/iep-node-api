@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t iep-node-api .
+docker build -t decentage/iep-node-api:latest .

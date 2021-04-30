@@ -28,9 +28,14 @@ swaggerTools.initializeMiddleware(swaggerDoc, function (middleware) {
 
   // Route validated requests to appropriate controller
   app.use(middleware.swaggerRouter(options));
-
+  
+  const swaggerUiOptions = {
+		  apiDocs: process.env.PUBLIC_PATH + '/api-docs',
+		  swaggerUi: process.env.PUBLIC_PATH + '/docs'
+		};
+  
   // Serve the Swagger documents and Swagger UI
-  app.use(middleware.swaggerUi());
+  app.use(middleware.swaggerUi(swaggerUiOptions));
 
   // Start the server
   http.createServer(app).listen(serverPort, function () {

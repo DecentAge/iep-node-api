@@ -41,7 +41,6 @@
 
     }
   },
-  "host": "localhost:23457",
   "basePath": "/api",
   "schemes": [
     "http"
