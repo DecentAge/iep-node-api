@@ -3,4 +3,5 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-docker build -t decentage/iep-node-api:latest .
+RELEASE_VERSION=$(cat release-version.txt)
+docker build -t decentage/iep-node-api:${RELEASE_VERSION} .
