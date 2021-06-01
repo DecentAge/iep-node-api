@@ -7,7 +7,7 @@ RUN npm install --silent
 COPY . /usr
 RUN npm run-script update-version --release_version=$(cat release-version.txt)
 RUN mkdir -p /app/build
-RUN zip -r /app/build/iep-peerexplorer-ui.zip ./dist
+RUN zip -r /app/build/iep-node-api-ui.zip ./dist
 COPY --from=builder /app/build /build
 #RUN npm run lint
 #EXPOSE 9006
