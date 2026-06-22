@@ -287,5 +287,4 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node,eclipse,intellij
 /.project
-/package-lock.json
 /iep-node-api.iml
