@@ -1,6 +1,6 @@
 {
   "name": "iep-node-api",
-  "version": "0.3.3",
+  "version": "0.4.1",
   "description": "Examples of XIN API calls base path is /api",
   "main": "index.js",
   "scripts": {
