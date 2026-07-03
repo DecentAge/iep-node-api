@@ -1,6 +1,6 @@
 {
   "name": "iep-node-api",
-  "version": "0.3.3",
+  "version": "0.4.1",
   "description": "Examples of XIN API calls base path is /api",
   "main": "index.js",
   "scripts": {
@@ -14,9 +14,14 @@
   "license": "Apache-2.0",
   "private": true,
   "dependencies": {
-    "connect": "^3.2.0",
-    "js-yaml": "^3.3.0",
-    "swagger-tools": "0.10.1",
-    "envsub": "4.0.7"
+    "express": "^5.2.1",
+    "js-yaml": "^4.1.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "envsub": "^4.1.0"
+  },
+  "engines": {
+    "node": "^22.0.0"
   }
 }
