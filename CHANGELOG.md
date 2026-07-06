@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## [0.4.1] - 2026-06-24
+## [0.4.1] - 2026-07-06
 ### Changed
 - Ported the API spec server off swagger-tools to Express (+ swagger-ui-express, js-yaml); Node 22; reproducible npm ci builds.
 
