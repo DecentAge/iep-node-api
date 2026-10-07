@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.4.2] - 2026-10-05
+### Changed
+- Build and publish the Docker image from iep-release instead of iep-docker.
+
 ## [0.4.1] - 2026-07-06
 ### Changed
 - Ported the API spec server off swagger-tools to Express (+ swagger-ui-express, js-yaml); Node 22; reproducible npm ci builds.
