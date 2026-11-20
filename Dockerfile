@@ -1,11 +1,11 @@
-FROM node:22-alpine AS builder
+FROM node:22.23.5-alpine3.24 AS builder
 WORKDIR /usr
 COPY ./package.json ./package-lock.json /usr/
 RUN npm ci --silent
 COPY . /usr
 RUN npm run-script update-version --release_version=$(cat release-version.txt)
 
-FROM node:22-alpine
+FROM node:22.23.5-alpine3.24
 WORKDIR /usr
 COPY --from=builder /usr /usr
 
